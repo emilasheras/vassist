@@ -11,3 +11,6 @@ runtime/*
 
 ### used to keep folder structure for general app tidyness
 !.gitkeep
+
+### environment variables
+.env

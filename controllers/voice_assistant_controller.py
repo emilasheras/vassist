@@ -1,9 +1,9 @@
 from models.system_monitor import SystemMonitor
-from views.voice_interface import VoiceInterface
+from models.voice_interface import VoiceInterface
 from components.logger import logger
 import datetime
 
-class MainController:
+class VoiceAssistantController:
     def __init__(self):
         self.monitor = SystemMonitor()
         self.interface = VoiceInterface()
@@ -79,8 +79,3 @@ class MainController:
         while True:
             comando = self.interface.transformar_audio_texto().lower()
             self.procesar_comando(comando)
-
-# Voice Assistant entry point
-if __name__ == "__main__":
-    controller = MainController()
-    controller.run()

@@ -8,9 +8,7 @@ class VoiceInterface:
         """
         Inicializa el motor de TTS y el reconocedor de voz.
         """
-        self.engine = initialize_tts_engine(
-            "HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Speech\\Voices\\Tokens\\TTS_MS_ES-ES_HELENA_11.0"
-        )
+        self.engine = initialize_tts_engine()
         self.recognizer = initialize_recognizer()
     
     def hablar(self, mensaje):
