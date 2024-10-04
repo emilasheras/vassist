@@ -35,40 +35,9 @@ sudo apt-get install portaudio19-dev
 ```
 
 
-Finalmente, instalar las librerías de las cuales el proyecto depende para poder correr
+Finalmente, instalar las librerías de las cuales el proyecto depende para poder correr (estar en el root del proyecto)
 ```sh
-sudo pip install pyttsx3 SpeechRecognition psutil pyaudio
-```
-
----
-
-Instala FastAPI y Uvicorn
-```sh
-pip install fastapi uvicorn
-```
-- [[FastAPI]]. Framework web
-- [[Uvicorn]]. servidor ASGI que ejecuta la app
-
-
----
-
-## Running the App Stack
-- aka: running *VA App* and *FastAPI App*.
-
-### Activate python `venv` environment
-ver [[#Libraries & Dependencies]]
-
-### Run the FastAPI server using Uvicorn
-```sh
-uvicorn app:app --reload
-```
-
-> code above is somewhat similar to `nodemon` watch in NodeJS apps ecosystem
-
-### Run the Voice Assistant App process
-ejecutar el siguiente comando desde el directorio raíz del proyecto
-```sh
-python -m controllers.main_controller
+pip install -r requirementx.txt
 ```
 
 ---
