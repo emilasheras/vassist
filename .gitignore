@@ -2,3 +2,6 @@
 .venv
 venv
 
+### __pycache__ files and folders
+__pycache__/
+*.pyc
