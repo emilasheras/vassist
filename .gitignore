@@ -5,3 +5,9 @@ venv
 ### __pycache__ files and folders
 __pycache__/
 *.pyc
+
+### logger file target
+runtime/*
+
+### used to keep folder structure for general app tidyness
+!.gitkeep
